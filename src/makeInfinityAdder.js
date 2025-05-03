@@ -5,11 +5,10 @@
  */
 function makeInfinityAdder() {
   let amount = 0;
-  let result = amount;
 
   const adder = (elem) => {
-    if (typeof elem !== 'number') {
-      result = amount;
+    if (elem === undefined) {
+      const result = amount;
 
       amount = 0;
 
